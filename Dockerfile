@@ -3,5 +3,5 @@ WORKDIR /app
 COPY package.json .
 RUN npm install
 COPY . .
-CMD node app.js
+CMD node WhoAmI.js
 EXPOSE 8081
