@@ -1,3 +1,5 @@
+
+
 # WhoAmI_NodeJs_Docker 
 
 ## *Part 1* | DockerFile & WhoAmI.js 
@@ -12,6 +14,10 @@
 ### - <a title="Part 2" href="https://github.com/cstoicescu/NGINX_Docker" target="_blank">Part 2</a> 
 ### - <a title="Part 3" href="https://github.com/cstoicescu/Vagrant_DockerSwarm" target="_blank">Part 3</a> 
  
+ ## Final Result after Deploy:  
+ https://user-images.githubusercontent.com/53979557/120241164-d6bd8a80-c26a-11eb-81dd-e749cd34b591.gif
+
+
  ### First Step:  Building an image from github repo and pushing it to Docker Hub
 
 $docker build -t catalin-nodejs-app:1.0 https://github.com/cstoicescu/WhoAmI_NodeJs_Docker.git 
