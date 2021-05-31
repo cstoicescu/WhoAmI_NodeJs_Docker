@@ -1,10 +1,16 @@
-# WhoAmI_NodeJs_Docker
+# WhoAmI_NodeJs_Docker 
 
-## WIP DockerFile | WhoAmI.js
+## *Part 1* | DockerFile & WhoAmI.js 
 
-dockerize nodeJs app 
+###  Here in this project i'll be dockerizing a Node.js application and then deploy 10 containers in a swarm cluster, load balance them behind a single IP with Nginx and then finally conclude with scaling them up and down also visualize the containers in a better way.  
 
+### So the main purpose of this project is not the NodeJs app itself, but rather to  deployi an Node.js app to 10 containers in a swarm then load balance them.
 
+## Content
+
+### - <a title="Part 1" href="https://github.com/cstoicescu/WhoAmI_NodeJs_Docker" target="_blank">Part 1</a> 
+### - <a title="Part 2" href="https://github.com/cstoicescu/NGINX_Docker" target="_blank">Part 2</a> 
+### - <a title="Part 3" href="https://github.com/cstoicescu/Vagrant_DockerSwarm" target="_blank">Part 3</a> 
  
 Docker provides a single command that will clean up any resources — images, containers, volumes, and networks — that are dangling (not associated with a container):   
 
