@@ -12,6 +12,20 @@
 ### - <a title="Part 2" href="https://github.com/cstoicescu/NGINX_Docker" target="_blank">Part 2</a> 
 ### - <a title="Part 3" href="https://github.com/cstoicescu/Vagrant_DockerSwarm" target="_blank">Part 3</a> 
  
+ ### First Step:  Building an image from github repo and pushing it to Docker Hub
+
+$docker build -t catalin-nodejs-app:1.0 https://github.com/cstoicescu/WhoAmI_NodeJs_Docker.git 
+
+$docker run catalin-nodejs-app:1.0 
+
+$docker container ls
+
+$docker login
+
+$docker push cstoicescu/whoami-nodejs-app:tagname  
+
+ 
+ ## Docker commands:
 Docker provides a single command that will clean up any resources — images, containers, volumes, and networks — that are dangling (not associated with a container):   
 
 $docker system prune    
@@ -29,14 +43,14 @@ docker images -a
  
 Remove:   
 
-docker rmi Image Image  
+__docker rmi Image Image__  
  
 
 Use the docker ps command with the -a flag to locate the name or ID of the containers you want to remove:   
 
 List:   
 
-docker ps -a   
+__docker ps -a__   
  
 Remove:   
 
@@ -49,30 +63,11 @@ Use the docker volume ls command to locate the volume name or names you wish to 
 
 List:   
 
-docker volume ls   
+__docker volume ls__   
  
 Remove:   
   
-docker volume rm volume_name volume_name  
+__docker volume rm volume_name volume_name__  
 
-
-
-$docker build -t catalin-nodejs-app:1.0 https://github.com/cstoicescu/WhoAmI_NodeJs_Docker.git 
-
-$docker run catalin-nodejs-app:1.0 
-
-$docker container ls
-
-$docker login
-
-$docker push cstoicescu/whoami-nodejs-app:tagname
-
-https://docs.docker.com/docker-hub/repos/#:~:text=To%20push%20an%20image%20to,docs%2Fbase%3Atesting%20).
-
-https://github.com/aagam29/dockerimage_nodejs
-
-https://github.com/twistedFantasy/docker-swarm-vagrant
-
-https://levelup.gitconnected.com/load-balance-and-scale-node-js-containers-with-nginx-and-docker-swarm-9fc97c3cff81
 
  
